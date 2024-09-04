@@ -50,7 +50,8 @@ on:
   pull_request:
 
 permissions:
-  contents: read
+  contents: read|write
+  actions: read|write
 
 jobs:
   terraform:
@@ -72,7 +73,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:
-        cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+        cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}      
     - name: Replace string in file
       uses: MathieuSoysal/replace-string-in-file@v1.0.0
       with:
