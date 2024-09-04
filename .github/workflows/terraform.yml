@@ -52,6 +52,7 @@ on:
 permissions:
   contents: read|write
   actions: read|write
+  id-token: write
 
 jobs:
   terraform:
