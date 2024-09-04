@@ -88,6 +88,7 @@ jobs:
         client-secret:  ${{ secrets.AZURE_CLIENT_SECRET }}
         tenant-id: e32c7504-61f3-4673-956b-e6d844b9b662
         subscription-id: af4e2492-8543-4249-b689-4fc4d728f392 
+        allow-no-subscriptions: false
         
     
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
