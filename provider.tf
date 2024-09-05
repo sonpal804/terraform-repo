@@ -16,4 +16,5 @@ provider "azurerm" {
   client_secret   = "clientsecret"
   tenant_id       = "tenantid"
   subscription_id = "subscriptionid"
+  
 }
