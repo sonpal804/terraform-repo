@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "sonpal-vm_group" {
-  name     = "sonpal-vm_group_rg1"
+resource "azurerm_resource_group" "rg" {
+  name     = "myTFResourceGroup"
   location = "westus2"
 }
